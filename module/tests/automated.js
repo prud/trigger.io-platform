@@ -1,13 +1,33 @@
 module("platform");
 
-// In this test we call the example showAlert API method with an empty string
-// In the example API method an empty string will immediately call the error callback
-asyncTest("Attempt to show an alert with no text", 1, function() {
-	forge.platform.showAlert("", function () {
-		ok(false, "Expected failure, got success");
-		start();
-	}, function () {
-		ok(true, "Expected failure");
-		start();
-	});
+asyncTest("Get OS version", 1, function() {
+        forge.platform.getVersion(function () {
+                ok(true, "Got OS version");
+                start();
+        }, function () {
+                ok(false, "API Error");
+                start();
+        });
 });
+
+asyncTest("Get device model", 1, function() {
+        forge.platform.getModel(function () {
+                ok(true, "Got device model");
+                start();
+        }, function () {
+                ok(false, "API Error");
+                start();
+        });
+});
+
+if (forge.is.android()) {
+        asyncTest("Get Android API level", 1, function() {
+                forge.platform.getAPILevel(function () {
+                        ok(true, "Got Android API level");
+                        start();
+                }, function () {
+                        ok(false, "API Error");
+                        start();
+                });
+        });
+}

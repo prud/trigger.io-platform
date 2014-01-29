@@ -1,20 +1,39 @@
 module("platform");
 
-// In this test we call the example showAlert API method with an example string
-asyncTest("Attempt to show an alert with no text", 1, function() {
-	forge.platform.showAlert("Hello, testing world!", function () {
-		askQuestion("Did you see an alert with the message 'Hello, testing world!'?", {
-			Yes: function () {
-				ok(true, "User claims success");
-				start();
-			},
-			No: function () {
-				ok(false, "User claims failure");
-				start();
-			}
-		});
-	}, function () {
-		ok(false, "API method returned failure");
-		start();
-	});
-});
+if (forge.is.android()) {
+  asyncTest("Version data", 1, function() {
+    forge.platform.getVersion(function(version) {
+      forge.platform.getModel(function(model) {
+        forge.platform.getAPILevel(function(level) {
+          askQuestion("Is this device version " + version + ", API level "  + level + " and a " + model + "?", {
+            Yes : function() {
+              ok(true, "Success");
+              start();
+            },
+            No : function() {
+              ok(false, "User claims failure");
+              start();
+            }
+          });
+        });
+      });
+    });
+  });
+} else {
+  asyncTest("Version data", 1, function() {
+    forge.platform.getVersion(function(version) {
+      forge.platform.getModel(function(model) {
+        askQuestion("Is this device version " + version + " and a " + model + "?", {
+          Yes : function() {
+            ok(true, "Success");
+            start();
+          },
+          No : function() {
+            ok(false, "User claims failure");
+            start();
+          }
+        });
+      });
+    });
+  });
+}
