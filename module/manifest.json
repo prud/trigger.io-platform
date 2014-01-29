@@ -1,0 +1,6 @@
+{
+    "description": "Information about the platform your app is running on. Available methods: 'platform.getVersion' (e.g: '6.1'); 'platform.getModel' (e.g: 'Nexus 7'); 'platform.getAPILevel' (e.g: '16')",
+    "name": "platform",
+    "platform_version": "v2.0.3",
+    "version": "0.5"
+}
