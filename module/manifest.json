@@ -1,6 +1,6 @@
 {
     "description": "Information about the platform your app is running on.", 
-    "min_platform_version": "v2.0.3", 
+    "min_platform_version": "v2.1.0", 
     "namespace": "platform", 
     "platform_version": "v2.1.0", 
     "version": "1.0"
