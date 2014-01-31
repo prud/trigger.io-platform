@@ -18,4 +18,4 @@ Device name: iPhone 5s
 
 ===
 
-Documentation can be found at the [Trigger.io module page](https://trigger.io/modules/prefs/current/docs/index.html).
+Documentation can be found at the [Trigger.io module page](https://trigger.io/modules/platform/current/docs/index.html).
