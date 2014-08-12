@@ -22,3 +22,9 @@ The ``forge.platform`` namespace allows you to get platform information from wit
 !description: Get the [Android API Level](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels).
 !param: success `function(level)` invoked with with the API level as its only argument
 !param: error `function(content)` called with details of any error which may occur
+
+!method: forge.platform.getManufacturer(success, error)
+!platforms: Android
+!description: Get the [Android API Level](http://developer.android.com/reference/android/os/Build.html#MANUFACTURER).
+!param: success `function(level)` invoked with with the manufacturer as its only argument
+!param: error `function(content)` called with details of any error which may occur

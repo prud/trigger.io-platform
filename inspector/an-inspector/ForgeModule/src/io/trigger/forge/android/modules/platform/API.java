@@ -1,6 +1,7 @@
 package io.trigger.forge.android.modules.platform;
 
 import io.trigger.forge.android.core.ForgeTask;
+
 import com.google.gson.JsonPrimitive;
 
 public class API {
@@ -14,5 +15,9 @@ public class API {
 
   public static void getAPILevel(final ForgeTask task) {
     task.success(new JsonPrimitive(android.os.Build.VERSION.SDK_INT));
+  }
+  
+  public static void getManufacturer(final ForgeTask task) {
+	task.success(new JsonPrimitive(android.os.Build.MANUFACTURER));
   }
 }
