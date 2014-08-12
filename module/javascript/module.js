@@ -8,5 +8,8 @@ forge.platform = {
     },
     getAPILevel: function (success, error) {
       forge.internal.call('platform.getAPILevel', {}, success, error);
+    },
+    getManufacturer: function (success, error) {
+      forge.internal.call('platform.getManufacturer', {}, success, error);
     }
 };
