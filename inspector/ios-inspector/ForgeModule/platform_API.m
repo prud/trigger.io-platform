@@ -61,6 +61,16 @@
     [task success:platform];
 }
 
+// return the OS manufacturer string
++ (void)getManufacturer:(ForgeTask*)task {
+	[task success:@"Apple"];
+}
+
+// return the NSFoundation version number
++ (void)getAPILevel:(ForgeTask*)task {
+	[task success:[NSString stringWithFormat:@"%f", NSFoundationVersionNumber]];
+}
+
 
 
 @end
