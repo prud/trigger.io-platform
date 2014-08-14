@@ -30,4 +30,14 @@ if (forge.is.android()) {
                         start();
                 });
         });
+
+        asyncTest("Get Android Manufacturer", 1, function() {
+                forge.platform.getManufacturer(function () {
+                        ok(true, "Got Android Manufacturer");
+                        start();
+                }, function () {
+                        ok(false, "API Error");
+                        start();
+                });
+        });
 }

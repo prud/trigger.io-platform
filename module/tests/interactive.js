@@ -5,15 +5,17 @@ if (forge.is.android()) {
     forge.platform.getVersion(function(version) {
       forge.platform.getModel(function(model) {
         forge.platform.getAPILevel(function(level) {
-          askQuestion("Is this device version " + version + ", API level "  + level + " and a " + model + "?", {
-            Yes : function() {
-              ok(true, "Success");
-              start();
-            },
-            No : function() {
-              ok(false, "User claims failure");
-              start();
-            }
+          forge.platform.getManufacturer(function(man) {
+            askQuestion("Is this device version " + version + ", API level "  + level + " and a " + man + " " + model + "?", {
+              Yes : function() {
+                ok(true, "Success");
+                start();
+              },
+              No : function() {
+                ok(false, "User claims failure");
+                start();
+              }
+            });
           });
         });
       });
