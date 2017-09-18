@@ -24,45 +24,84 @@
                               encoding:NSUTF8StringEncoding];
     
     if ([platform isEqualToString:@"iPhone1,1"])    [task success:@"iPhone 1G"];
+
     if ([platform isEqualToString:@"iPhone1,2"])    [task success:@"iPhone 3G"];
     if ([platform isEqualToString:@"iPhone2,1"])    [task success:@"iPhone 3GS"];
+
     if ([platform isEqualToString:@"iPhone3,1"])    [task success:@"iPhone 4"];
     if ([platform isEqualToString:@"iPhone3,2"])    [task success:@"iPhone 4"];
     if ([platform isEqualToString:@"iPhone3,3"])    [task success:@"Verizon iPhone 4"];
     if ([platform isEqualToString:@"iPhone4,1"])    [task success:@"iPhone 4S"];
+
     if ([platform isEqualToString:@"iPhone5,1"])    [task success:@"iPhone 5 (GSM)"];
     if ([platform isEqualToString:@"iPhone5,2"])    [task success:@"iPhone 5 (GSM+CDMA)"];
     if ([platform isEqualToString:@"iPhone5,3"])    [task success:@"iPhone 5c (GSM)"];
     if ([platform isEqualToString:@"iPhone5,4"])    [task success:@"iPhone 5c (GSM+CDMA)"];
     if ([platform isEqualToString:@"iPhone6,1"])    [task success:@"iPhone 5s (GSM)"];
     if ([platform isEqualToString:@"iPhone6,2"])    [task success:@"iPhone 5s (GSM+CDMA)"];
+
     if ([platform isEqualToString:@"iPhone7,1"])    [task success:@"iPhone 6 Plus"];
     if ([platform isEqualToString:@"iPhone7,2"])    [task success:@"iPhone 6"];
+    if ([platform isEqualToString:@"iPhone8,1"])    [task success:@"iPhone 6s"];
+    if ([platform isEqualToString:@"iPhone8,2"])    [task success:@"iPhone 6s Plus"];
+
+    if ([platform isEqualToString:@"iPhone8,4"])    [task success:@"iPhone SE"];
+
+    if ([platform isEqualToString:@"iPhone9,1"])    [task success:@"iPhone 7 (CDMA)"];
+    if ([platform isEqualToString:@"iPhone9,3"])    [task success:@"iPhone 7 (GSM+CDMA)"];
+    if ([platform isEqualToString:@"iPhone9,2"])    [task success:@"iPhone 7 Plus (CDMA)"];
+    if ([platform isEqualToString:@"iPhone9,4"])    [task success:@"iPhone 7 Plus (GSM+CDMA)"];
+
     if ([platform isEqualToString:@"iPod1,1"])      [task success:@"iPod Touch 1G"];
     if ([platform isEqualToString:@"iPod2,1"])      [task success:@"iPod Touch 2G"];
     if ([platform isEqualToString:@"iPod3,1"])      [task success:@"iPod Touch 3G"];
     if ([platform isEqualToString:@"iPod4,1"])      [task success:@"iPod Touch 4G"];
     if ([platform isEqualToString:@"iPod5,1"])      [task success:@"iPod Touch 5G"];
+    if ([platform isEqualToString:@"iPod7,1"])      [task success:@"iPod Touch 6G"];
+
     if ([platform isEqualToString:@"iPad1,1"])      [task success:@"iPad"];
+
     if ([platform isEqualToString:@"iPad2,1"])      [task success:@"iPad 2 (WiFi)"];
     if ([platform isEqualToString:@"iPad2,2"])      [task success:@"iPad 2 (GSM)"];
     if ([platform isEqualToString:@"iPad2,3"])      [task success:@"iPad 2 (CDMA)"];
     if ([platform isEqualToString:@"iPad2,4"])      [task success:@"iPad 2 (WiFi)"];
+
     if ([platform isEqualToString:@"iPad2,5"])      [task success:@"iPad Mini (WiFi)"];
     if ([platform isEqualToString:@"iPad2,6"])      [task success:@"iPad Mini (GSM)"];
     if ([platform isEqualToString:@"iPad2,7"])      [task success:@"iPad Mini (GSM+CDMA)"];
+
     if ([platform isEqualToString:@"iPad3,1"])      [task success:@"iPad 3 (WiFi)"];
     if ([platform isEqualToString:@"iPad3,2"])      [task success:@"iPad 3 (GSM+CDMA)"];
     if ([platform isEqualToString:@"iPad3,3"])      [task success:@"iPad 3 (GSM)"];
+
     if ([platform isEqualToString:@"iPad3,4"])      [task success:@"iPad 4 (WiFi)"];
     if ([platform isEqualToString:@"iPad3,5"])      [task success:@"iPad 4 (GSM)"];
     if ([platform isEqualToString:@"iPad3,6"])      [task success:@"iPad 4 (GSM+CDMA)"];
+
     if ([platform isEqualToString:@"iPad4,1"])      [task success:@"iPad Air (WiFi)"];
     if ([platform isEqualToString:@"iPad4,2"])      [task success:@"iPad Air (Cellular)"];
     if ([platform isEqualToString:@"iPad4,3"])      [task success:@"iPad Air (Cellular)"];
+
+    if ([platform isEqualToString:@"iPad5,3"])      [task success:@"iPad Air 2 (WiFi)"];
+    if ([platform isEqualToString:@"iPad5,4"])      [task success:@"iPad Air 2 (Cellular)"];
+
     if ([platform isEqualToString:@"iPad4,4"])      [task success:@"iPad mini 2G (WiFi)"];
     if ([platform isEqualToString:@"iPad4,5"])      [task success:@"iPad mini 2G (Cellular)"];
     if ([platform isEqualToString:@"iPad4,6"])      [task success:@"iPad mini 2G (Cellular)"];
+
+    if ([platform isEqualToString:@"iPad4,7"])      [task success:@"iPad mini 3 (WiFi)"];
+    if ([platform isEqualToString:@"iPad4,8"])      [task success:@"iPad mini 3 (Cellular)"];
+    if ([platform isEqualToString:@"iPad4,9"])      [task success:@"iPad mini 3 (Cellular)"];
+
+    if ([platform isEqualToString:@"iPad5,1"])      [task success:@"iPad mini 4 (WiFi)"];
+    if ([platform isEqualToString:@"iPad5,2"])      [task success:@"iPad mini 4 (Cellular)"];
+
+    if ([platform isEqualToString:@"iPad6,3"])      [task success:@"iPad Pro 9.7-Inch (WiFi)"];
+    if ([platform isEqualToString:@"iPad6,4"])      [task success:@"iPad Pro 9.7-Inch (Cellular)"];
+
+    if ([platform isEqualToString:@"iPad6,7"])      [task success:@"iPad Pro 12.9-Inch (WiFi)"];
+    if ([platform isEqualToString:@"iPad6,8"])      [task success:@"iPad Pro 12.9-Inch (Cellular)"];
+
     if ([platform isEqualToString:@"i386"])         [task success:@"Simulator"];
     if ([platform isEqualToString:@"x86_64"])       [task success:@"Simulator"];
     [task success:platform];
